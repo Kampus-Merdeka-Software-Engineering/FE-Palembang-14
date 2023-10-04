@@ -1,0 +1,92 @@
+/* Reset gaya default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px
+}
+
+
+.logo img {
+    max-height: 150px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-right: 270px;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #DBD7CC;
+    font-weight: bold;
+}
+
+.book-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover {
+    flex: 1;
+    padding: 10px;
+}
+
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-description {
+    flex: 2;
+    padding: 10px;
+}
+
+.book-description h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.book-description p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.book-description button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-description button:hover {
+    background-color: #0056b3;
+}
