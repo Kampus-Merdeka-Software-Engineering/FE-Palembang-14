@@ -308,6 +308,13 @@ header {
     color: #DBD7CC;
     margin-top: 10px; 
   }
+
+  @media screen and (max-width: 600px) {
+    .content-books {
+        max-width: 100%;
+    }
+}
+  
   
 
 
