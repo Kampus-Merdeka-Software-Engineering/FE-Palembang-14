@@ -308,7 +308,118 @@ header {
     color: #DBD7CC;
     margin-top: 10px; 
   }
+
   
+  @media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%;
+    }
+
+    .content-box textarea {
+        width: 100%;
+    }
+
+    .content-box button {
+        margin-left: 0;
+    }
+
+    .popular-sections,
+    .popular-books-title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .popular-sections h2,
+    .popular-books-title {
+        max-width: 100%; /* Atur lebar maksimum untuk teks */
+        margin: 0 auto; /* Untuk membuat teks terpusat dalam elemen */
+    }
+
+
+    .left-text {
+        margin-top: 70px;
+        width: 500px;
+        text-align: justify;
+    }
+    .right-text {
+        width: 500px;
+        text-align: justify;
+    }
+
+    .popular-questions {
+        margin-top: 20px; 
+    }
+
+    
+    .center-line {
+        display: none;
+    }
+
+
+    .content-books,
+    .content-questions {
+        flex-direction: column;
+    }
+
+    .content-books .left-box,
+    .content-questions .right-box {
+        margin-top: 20px; 
+    }
+    .slide {
+        width: 85px;
+        height: 100px;
+        margin: 20px 5px 5px 5px;
+    }
+
+    .slide img {
+        margin-top: 2.5px;
+    }
+    .slide p{
+        display: none;
+    }
+
+}
+        
+
+
+/* @media (max-width: 768px) {
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .search-box input[type="text"] {
+        width: 70%;
+    }
+
+    .content-box textarea {
+        width: 100%;
+    }
+    
+    .slide {
+        width: 85px;
+        height: 100px;
+        margin: 20px 5px 5px 5px;
+    }
+
+    .slide img {
+        margin-top: 2.5px;
+    }
+    .slide p{
+        display: none;
+    }
+} */
 
 
   
