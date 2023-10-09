@@ -4,6 +4,12 @@ const slideCount = slides.length;
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const visibleSlides = 5; // Jumlah slide yang akan ditampilkan pada suatu waktu
+const ambilData = async() => {
+    const response = await fetch("http://example.com/movies.json");
+    const books = await response.json();
+    console.log(books);
+
+}
 
 function showSlide(index) {
   slides.forEach((slide) => {
