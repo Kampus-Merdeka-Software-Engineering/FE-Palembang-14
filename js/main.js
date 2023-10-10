@@ -4,11 +4,7 @@ const slideCount = slides.length;
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const visibleSlides = 5; // Jumlah slide yang akan ditampilkan pada suatu waktu
-const ambilData = async() => {
 
-};
-
-ambilData{};
 function showSlide(index) {
   slides.forEach((slide) => {
     slide.style.display = 'none'; // Semua slide disembunyikan
@@ -47,37 +43,19 @@ showSlide(currentSlide);
 
 
 // manggil data book
+async function getBookData() {
+  try {
+    const response = await fetch('http://localhost:3000/books');
+    if (!response.ok) {
+      throw new Error('Gagal mengambil data buku');
+    }
+    const books = await response.json();
+    console.log(books);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// async function getBookData() {
-
-//   let params = new URLSearchParams(window.location.search);
-//   let id = params.id;
-
-//   try {
-    
-//     fetch(`http://localhost:3000/book/${id}`)
-//       method: "POST"
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
 
 
