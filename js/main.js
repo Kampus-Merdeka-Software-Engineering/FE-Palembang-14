@@ -31,10 +31,49 @@ function prevSlide() {
   }
 }
 
-prevButton.addEventListener('click', prevSlide);
-nextButton.addEventListener('click', nextSlide);
+// check dia klo null atau ga
+
+if (prevButton != null) {
+  prevButton.addEventListener('click', prevSlide);
+  nextButton.addEventListener('click', nextSlide);
+}
 
 // Menampilkan 5 slide pertama saat halaman dimuat
 showSlide(currentSlide);
+
+
+// manggil data book
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// async function getBookData() {
+
+//   let params = new URLSearchParams(window.location.search);
+//   let id = params.id;
+
+//   try {
+    
+//     fetch(`http://localhost:3000/book/${id}`)
+//       method: "POST"
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 

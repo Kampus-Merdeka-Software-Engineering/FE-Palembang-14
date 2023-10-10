@@ -29,6 +29,7 @@
         <div class="book-description">
             <h3>Judul Buku</h3>
             <p>Penulis: Nama Penulis</p>
+            <p>Tahun Terbit: </p>
             <p>Deskripsi singkat tentang buku ini.</p>
             <button>Download</button>
         </div>
@@ -36,5 +37,29 @@
 
     <!-- Tambahkan lebih banyak div .book-container untuk buku-buku lainnya -->
 
+    <script src="js/main.js" type="text/javascript"></script></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        fetch('api/books/${urlParams.get("id")}').then((respons)=>(
+            console.log
+
+        ))
+            console.log
+
+
+
+
+
+
+
+
+
+
+        // document.addEventListener("DOMContentLoaded", async (event) => {
+        //     <!-- console.log("DOM fully loaded and parsed"); -->
+        //     // alert();
+        //     await getBookData();
+        // });            
+    </script>
 </body>
 </html>
