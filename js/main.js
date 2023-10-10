@@ -4,7 +4,11 @@ const slideCount = slides.length;
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
 const visibleSlides = 5; // Jumlah slide yang akan ditampilkan pada suatu waktu
+const ambilData = async() => {
 
+};
+
+ambilData{};
 function showSlide(index) {
   slides.forEach((slide) => {
     slide.style.display = 'none'; // Semua slide disembunyikan
